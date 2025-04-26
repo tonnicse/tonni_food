@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>FoodPanda Clone</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <!-- Tailwind via CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-gray-50 font-sans">
+
+  <!-- Hero Banner -->
+  <section class="bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 text-white text-center py-16">
+    <h1 class="text-5xl font-extrabold mb-4">Delicious Meals Delivered Fast</h1>
+    <p class="text-xl">Discover our colorful menu and order your favorites now!</p>
+  </section>
+
+  <!-- Navbar -->
+  <header class="sticky top-0 bg-white shadow-md z-10">
+    <nav class="container mx-auto flex justify-between items-center py-4 px-6">
+      <h2 class="text-2xl font-bold text-red-600">FoodPandaClone</h2>
+      <a href="#checkout" class="text-gray-700 hover:text-red-600">
+        🛒 Cart (<span id="cart-count">0</span>)
+      </a>
+    </nav>
+  </header>
+
+  <!-- Product Grid -->
+  <main class="container mx-auto py-8 px-6">
+    <h2 class="text-3xl font-semibold mb-6 text-gray-800">Our Menu</h2>
+    <div id="product-list" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8"></div>
+  </main>
+
+  <!-- Checkout Overlay -->
+  <section id="checkout" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center p-4 hidden">
+    <div class="bg-white w-full max-w-lg p-6 rounded-lg shadow-lg">
+      <h2 class="text-2xl font-bold mb-4 text-gray-800">Checkout</h2>
+      <div id="cart-items" class="space-y-4 mb-6"></div>
+      <button id="confirm-order" class="w-full bg-green-500 text-white py-3 rounded-lg hover:bg-green-600 transition">
+        Confirm Order
+      </button>
+      <button id="close-cart" class="mt-4 w-full text-center text-gray-600 hover:underline">
+        Continue Shopping
+      </button>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
