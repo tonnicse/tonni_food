@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Fahmida Ahmed Tonni — Portfolio</title>
+
+  <!-- FontAwesome for icons -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-papbX+3jdV0S6kS+6pMZf5ZtyG+ByO+2G9EbVQ+nH+ZVgqNqbj5MMVIGL+2PH/O7Jeie1GToVRe2nLFox3qCkg=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+
+  <!-- Main stylesheet -->
+  <link rel="stylesheet" href="style.css"/>
+
+  <!-- Three.js library -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+
+  <!-- Custom scripts -->
+  <script defer src="background.js"></script>
+  <script defer src="main.js"></script>
+</head>
+
+<body>
+  <!-- Animated particle background -->
+  <canvas id="bg"></canvas>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="logo">Fahmida Ahmed Tonni</a>
+      <ul class="nav-menu">
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#certifications">Certifications</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main>
+    <!-- HERO -->
+    <section id="hero" class="hero">
+      <div class="hero-content">
+        <img src="avatar.jpg" alt="Fahmida Ahmed Tonni" class="avatar"/>
+        <h1>Fahmida Ahmed Tonni</h1>
+        <p>Computer Science &amp; Engineering, DIU<br/>CSE | Data Analyst | Machine Learning | Computer Vision | Data Science | Full-Stack
+          Web Development</p>
+        <div class="social-links">
+          <a href="https://www.linkedin.com/in/fahmida-ahmed-tonni-11330522b/" target="_blank"><i class="fab fa-linkedin"></i></a>
+          <a href="https://github.com/tonni59" target="_blank"><i class="fab fa-github"></i></a>
+          <a href="https://www.youtube.com/@FahmidaAhmedTonni/videos" target="_blank"><i class="fab fa-youtube"></i></a>
+        </div>
+        <a href="#projects" class="btn-3d">View Projects</a>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section">
+      <h2>About Me</h2>
+      <p>
+        Final-year CSE student at Daffodil International University, Dhaka, with a passion for 
+        Computer Vision, Full-Stack Web Development, and Data Science. I turn complex 
+        problems into elegant solutions—whether that’s a 3D reconstruction pipeline or a 
+        responsive web app.
+      </p>
+      <a href="#contact" class="btn-3d small">Get in Touch</a>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section id="experience" class="section">
+      <h2>Experience</h2>
+      <ul class="list">
+        <li>
+          <strong>Intern, Tech Solutions Ltd.</strong> (2024)<br/>
+          Developed RESTful APIs, optimized front-end performance.
+        </li>
+        <li>
+          <strong>Volunteer Dev, Open Source</strong> (2023–Present)<br/>
+          Contributed accessibility improvements to community projects.
+        </li>
+        <li>
+          <strong>Executive Member, DIU GCPC</strong> (2022–2024)<br/>
+          Organized coding contests, mentored newcomers.
+        </li>
+        <li>
+          <strong>Researcher, Health Informatics Lab, DIU</strong><br/>
+          Worked on medical imaging and hybrid DL models.
+        </li>
+      </ul>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="section">
+      <h2>Skills</h2>
+      <ul class="skills-list">
+        <li>Python</li><li>HTML5 &amp; CSS3</li><li>JavaScript (ES6+)</li>
+        <li>React.js &amp; Node.js</li><li>Three.js &amp; WebGL</li><li>SQL</li>
+        <li>Power BI &amp; Tableau</li><li>Machine Learning &amp; Deep Learning</li>
+        <li>Computer Vision &amp; NLP</li><li>PyTorch, TensorFlow, Keras</li>
+        <li>AWS, Azure, Google Cloud</li><li>UI/UX Design &amp; WordPress</li>
+      </ul>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section">
+      <h2>Projects</h2>
+      <div class="project-cards">
+        <div class="card">
+          <h3>SkinLesionNet++</h3>
+          <p>A hybrid CNN–ViT model with CycleGAN-augmented K-means segmentation for skin cancer detection.</p>
+          <a href="#" class="btn-3d small">View Paper</a>
+        </div>
+        <div class="card">
+          <h3>MedFusion-KFNet</h3>
+          <p>Explainable DL framework for 12-class knee fracture classification using GRADCAM++.</p>
+          <a href="#" class="btn-3d small">View Code</a>
+        </div>
+        <div class="card">
+          <h3>Smart Defect Detection</h3>
+          <p>React.js + FastAPI + TensorFlow pipeline for manufacturing line defect detection.</p>
+          <a href="#" class="btn-3d small">Live Demo</a>
+        </div>
+        <div class="card">
+          <h3>Medical Imaging Portal</h3>
+          <p>Next.js + Django + PyTorch portal with AWS Lambda backend for diagnostic imaging.</p>
+          <a href="#" class="btn-3d small">View Repo</a>
+        </div>
+        <div class="card">
+          <h3>Traffic Violation System</h3>
+          <p>Vue.js + Node.js + YOLOv8 + Firebase for automated violation detection & reporting.</p>
+          <a href="#" class="btn-3d small">Explore</a>
+        </div>
+        <div class="card">
+          <h3>E-Learning AI Tutor</h3>
+          <p>React.js + Flask + Scikit-Learn portal with AWS CloudFront distribution.</p>
+          <a href="#" class="btn-3d small">Try It</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- EDUCATION -->
+    <section id="education" class="section">
+      <h2>Education</h2>
+      <ul class="list">
+        <li>
+          <strong>Daffodil International University</strong><br/>
+          B.Sc. in CSE, 2021–2025 (CGPA 3.50)
+        </li>
+        <li>
+          <strong>Govt. Ibrahim Khan College</strong><br/>
+          HSC, 2017–2019
+        </li>
+        <li>
+          <strong>Bhuapur Pilot Girls’ High School</strong><br/>
+          SSC, 2015–2017
+        </li>
+      </ul>
+    </section>
+
+    <!-- CERTIFICATIONS -->
+    <section id="certifications" class="section">
+      <h2>Certifications</h2>
+      <ul class="list">
+        <li>IBM Data Science Professional Certificate (10 modules)</li>
+        <li>Deep Learning with Computer Vision (Innovative Skills)</li>
+        <li>Champion: Prompt Battle Contest, DIU CPC 2024</li>
+        <li>Top-15: Crack Dataset Contest, DIU 2024</li>
+        <li>3rd Place: DIU GCPC Competitive Programming 2023</li>
+        <li>NLP &amp; ML Bootcamp, DIU</li>
+        <li>Machine Learning: Beginner to Advanced</li>
+      </ul>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section">
+      <h2>Contact Me</h2>
+      <p>Email: <a href="mailto:fahmidaahmedtonny63@gmail.com">fahmidaahmedtonny63@gmail.com</a><br/>
+         Phone: <a href="tel:+8801942808430">+8801942808430</a><br/>
+         Location: Dhaka, Bangladesh
+      </p>
+      <form id="contactForm">
+        <input type="text" name="name" placeholder="Your Name" required/>
+        <input type="email" name="email" placeholder="Your Email" required/>
+        <textarea name="message" placeholder="Your Message" required></textarea>
+        <button type="submit" class="btn-3d">Send Message</button>
+      </form>
+      <p id="contactStatus"></p>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    &copy; 2025 Fahmida Ahmed Tonni
+  </footer>
+</body>
+</html>
